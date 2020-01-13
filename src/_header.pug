@@ -1,0 +1,44 @@
+mixin header
+  div.h-screen.bg-cover.bg-center(style="background-image: url('https://a0.muscache.com/4ea/air/r:w1550-h1037-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg')")
+    header.flex.justify-between.items-center
+      span.p-5
+        i.fab.fa-airbnb.fa-2x.text-white
+      nav.text.font-bold.px-4
+        ul.flex.justify-between.text-white
+          li.px-3
+            button
+              i.fas.fa-globe
+              span.ml-2 Español(MX)
+          li.px-3
+            button $MXN
+          li.px-3
+            button Hospedaje en un alojamiento
+          li.px-3
+            button Organiza una experiencia
+          li.px-3
+            button Ayuda
+          li.px-3
+            button Regístrate
+          li.px-3
+            button Iniciar sesión
+    .bg-white.ml-20.rounded.p-8.mt-10(style="width: 28.5em;")
+      h2.font-bold.text-3xl.leading-tight Reserva alojamientos y experiencias únicas
+      .mt-4
+        p.form-label Dónde
+        input.h-10.border.rounded.w-full.px-2.py-6(placeholder= "Cualquier lugar")
+      .flex.mt-4
+        div
+          p.py-2.uppercase.font-bold.text-xs Llegada
+          input.h-10.border.rounded-l.px-2.py-6(placeholder= "dd/mm/aaaa")
+        div
+          p.py-2.uppercase.font-bold.text-xs Salida
+          input.h-10.border.rounded-r.px-2.py-6(placeholder= "dd/mm/aaaa")
+      .mt-4
+        p.py-2.uppercase.font-bold.text-xs Huéspedes
+        input.h-10.border.rounded.w-full.px-2.py-6(placeholder= "Huéspedes")
+      .mt-4.flex.justify-end
+        button.bg-red-500.px-6.py-3.rounded.text-white.font-bold Buscar
+    .mt-6.flex.justify-end
+      .p-6
+        p.text-white Más de 300 lugares únicos
+        p.text-white para hospedarte en Oregón
